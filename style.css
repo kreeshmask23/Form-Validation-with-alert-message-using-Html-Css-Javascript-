@@ -1,0 +1,36 @@
+.body{
+    background-image: url(img2.jpg);
+}
+.forms {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #120e0e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(215, 175, 118);
+    
+    
+}
+.forms form {
+    display: flex;
+    flex-direction: column;
+}
+.forms label {
+    margin-bottom: 5px;
+}
+.forms input, .forms textarea, .forms button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.forms button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.forms button:hover {
+    background-color: #1b491e;
+}

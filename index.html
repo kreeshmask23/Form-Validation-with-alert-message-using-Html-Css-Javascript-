@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+    <div class="forms">
+    <form  name="validateform" action ="index.html" method="post" onsubmit="return validationform()">
+        FirstName:<input type="text" name="firstname" ><br><br>
+        LastName:<input type="text" name="lastname"><br><br>
+        City:<input type="text" name="city"><br><br>
+        Phonenumber:<input type="number" name="phonenumber"><br><br>
+        Address:<textarea type="text" name="address"></textarea><br><br>
+        <button type="submit" value="submit">Submit</button>
+        
+    </form>
+    </div>
+    </div>
+
+        <script>
+            function validationform(){
+    var firstname=document.validateform.firstname.value;
+    var lastname=document.validateform.lastname.value;
+    var city=document.validateform.city.value;
+    var phonenumber=document.validateform.phonenumber.value;
+    var address=document.validateform.address.value;
+
+
+    if (firstname == "" || lastname == "" || city == "" || phonenumber == "" || address == "") {
+                alert("please fill all the fields");
+                return false;
+    } 
+    else if(phonenumber.length<10 || phonenumber.length>10){
+    alert("Phonenumber should have 10 numbers");
+        return false;
+    }
+    else{
+        alert("Registered Successfully");
+        return true;
+    }
+}
+
+
+        </script>
+
+    
+</body>
+</html>
